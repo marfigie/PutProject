@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="PUT_Project.Menu.GameScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Background="#FF333238" Foreground="White">
+    <Grid>
+        <Button x:Name="GameFieldButton1" Content="" HorizontalAlignment="Left" Margin="80,121,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton1_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton2" Content="" HorizontalAlignment="Left" Margin="180,121,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton2_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton3" Content="" HorizontalAlignment="Left" Margin="280,121,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton3_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton4" Content="" HorizontalAlignment="Left" Margin="80,221,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton4_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton5" Content="" HorizontalAlignment="Left" Margin="180,221,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton5_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton6" Content="" HorizontalAlignment="Left" Margin="280,221,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton6_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton7" Content="" HorizontalAlignment="Left" Margin="80,321,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton7_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton8" Content="" HorizontalAlignment="Left" Margin="180,321,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton8_Click" FontSize="48" Foreground="White"/>
+        <Button x:Name="GameFieldButton9" Content="" HorizontalAlignment="Left" Margin="280,321,0,0" VerticalAlignment="Top" Width="80" Background="#FF1799E4" BorderBrush="{x:Null}" Height="80" Click="GameFieldButton9_Click" FontSize="48" Foreground="White"/>
+        <Label x:Name="OponentLabel" Content="Oponent:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="612,50,21,0" VerticalAlignment="Top" Background="#FFB20707" Foreground="White" Height="29" Width="167" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="PlayerLabel" Content="Player:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="446,50,188,0" VerticalAlignment="Top" Background="#FF1799E4" Foreground="White" Height="29" Width="166" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="OponentIPLabel" Content="IP: 0.0.0.0:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="612,79,21,0" VerticalAlignment="Top" Background="#FF8B1111" Foreground="White" Height="29" Width="167" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="PlayerIPLabel" Content="IP: 0.0.0.0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="446,79,188,0" VerticalAlignment="Top" Background="#FF1C76AA" Foreground="White" Height="29" Width="166" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="EndgameLabel" Content="WINNER" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="80,492,440,0" VerticalAlignment="Top" Background="#FF00B200" Foreground="White" Height="28" Width="280" RenderTransformOrigin="0.5,0.5" IsEnabled="False"/>
+        <TextBox x:Name="EnterTextChatTextbox" HorizontalAlignment="Left" Height="24" Margin="446,496,0,0" TextWrapping="Wrap" Text="Enter Message" VerticalAlignment="Top" Width="333" KeyDown="TextBoxEnterPressed" GotFocus="EnterTextTexboxOnFocus" LostFocus="EnterTextTexboxOnFocusLost" />
+        <RichTextBox x:Name="RichTextBoxChat" HorizontalAlignment="Left" Height="365" Margin="446,126,0,0" VerticalAlignment="Top" Width="333" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Chat:"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="GameStateLabel" Content="GameState:" HorizontalAlignment="Center" Margin="80,50,440,0" VerticalAlignment="Top" Background="#FF373838" Foreground="White" Height="58" Width="280" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</UserControl>
